@@ -1,0 +1,105 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Caveat&family=Dancing+Script&family=Pacifico&family=Signika+Negative:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background-color: #f8f9fa; */
+    font-style: italic;
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    background-image: url("./Images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+input{
+    border : none !important ;
+    background-color: rgb(255, 255, 255, 0.5) !important;
+}
+h1 {
+    color: red;
+    font-size: 60px;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+}
+.subHead{
+    color: #fff;
+    font-style: italic;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+.names{
+    padding: 30px;
+    color: rgb(255, 0, 0);
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+}
+button.btn-primary {
+    background-color: rgba(0, 86, 179, 0.85);
+    margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+button.btn-primary:hover {
+    background-color: rgb(0, 123, 255);
+}
+button.btn-danger {
+    background-color: rgba(207, 67, 81, 0.85);
+    margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+button.btn-danger:hover {
+    background-color: rgb(207, 67, 81);
+}
+#resultCard {
+    display: none;
+}
+.result-success {
+    background-color: rgb(41,174,181, 0.8);
+}
+.result-error {
+    background-color:rgba(15, 176, 162, 0.8);
+}
+.result-card {
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    background-blend-mode:multiply;
+}
+#resultImage{
+    width: 220px;
+    height: fit-content;
+    mix-blend-mode: color-burn;
+}
+.tryBtn{
+    background-color: rgb(234, 51, 51, 0.9);
+    color: #fff;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        background-size: auto 994px; /* Adjust the height to maintain aspect ratio */
+    }
+
+    .container {
+        margin-top: 30px; /* Move the container down by 20px */
+    }
+}
